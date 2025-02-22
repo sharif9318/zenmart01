@@ -1,3 +1,8 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .navbar_frame {
   position: relative;
   width: 100%;
@@ -388,4 +393,76 @@ text-align: left;
   background: rgb(255, 255, 255);
   border-radius: 6px;
   border: none;
+}
+.ads {
+  width: 1320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* background-color: aqua; */
+}
+.ads_top {
+  width: 1320px;
+  height: 510px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.adsTopLeft {
+  width: 870px;
+  height: 510px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  background: rgb(0, 83, 246);
+}
+.adsTopLeft .tvComp {
+position: absolute;
+margin: 68px 18px 33px 334px;
+z-index: 2;
+}
+.adsTopLeft .immersive {
+width: 350px;
+height: 120px;
+position: absolute;
+margin: 141px 430px 215px 15px;
+}
+.adsTopLeftP {
+  /* Discover our new items. Up to 25% Off ! */
+position: absolute;
+width: 262.11px;
+height: 56px;
+margin: 280px 60px 125px 10px;
+color: white
+}
+.shopNow {
+  width: 140px;
+  height: 52px;
+  position: absolute;
+  margin: 350px 300px 80px 10px;;
+}
+.adsTopRight {
+  width: 422px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.adsTopRight1, .adsTopRight2 {
+  width: 422px;
+  height: 245px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(242, 242, 242);
+}
+.adsTopRight2 {
+  width: 422px;
+  height: 245px;
+  background: rgb(242, 242, 242);
 }
