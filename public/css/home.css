@@ -263,3 +263,129 @@ svg {
   letter-spacing: 0%;
   text-align: right;
 }
+.footer_background {
+width: 100%;
+height: 507px;
+top: 3994px;
+bottom: -3994px;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background: rgb(243, 245, 246);
+}
+
+.footer_top {
+  width: 1320px;
+  height: 250px;
+  /* background: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_top1 {
+  width: 320px;
+  height: 200px;
+ 
+display : flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+
+.footer_top2, .footer_top3 {
+  padding-left: 50px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  }
+
+.footer_top2 a, .footer_top3 a {
+  color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 14px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0%;
+text-align: left;
+}
+.footer_top3{
+  width: 300px;
+  height: 200px;
+  /* background: rgb(0, 255, 0); */ */
+}
+.footer_top4{
+  width: 300px;
+  height: 200px;
+  /* background: rgb(79, 148, 228); */
+}
+.footer_top5{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background: rgb(204, 114, 189); */
+}
+
+.footer_top h3 {
+  margin-top: 0;
+  color: rgb(4, 30, 66);
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+.footer_top strong, b {
+margin-left: 30px;
+color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+}
+.footer_top1 p {
+  margin-left: 70px;
+  color: rgb(4, 30, 66);
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer_bottom{
+  margin-top: 90px;
+  width: 1320px;
+  border-top: 0.8px solid #d0d0da;
+  padding-top: 20px;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+.footer_bottom select{
+  width: 200px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  border: none;
+}
