@@ -466,3 +466,303 @@ color: white
   height: 245px;
   background: rgb(242, 242, 242);
 }
+/* .categoryFrame {
+width: 100%;
+height: 700px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+background: aqua; */
+
+
+.categoryContainer, .topSellingFrame{
+  
+  width: 1320px;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+
+.categoryTop, .sellingTop {
+  width: 1320px;
+  height: 40px;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryTop, .sellingTop span {
+  width: 1320px;
+height: 40px;
+left: 260px;
+right: 760.19px;
+top: 906px;
+bottom: -906px;
+  color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 28px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0%;
+
+}  
+.categoryTop a {
+  color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+}
+.categoryTop a:hover{
+  border-bottom: 2px solid rgb(4, 30, 66);
+}
+.categoryBottom {
+  width: 1320px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+
+}
+.categoryBottom1 {
+  width: 142px;
+  height: 250px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+
+ 
+}
+.categoryImgBox1 {
+  width: 142px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.categoryImgBox {
+  width: 142px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.categoryBottom1 img {
+  width: 95px;
+  height: 100px;
+}
+.categoryBottom2 img {
+  width: 100px;
+  height: 65px;
+}
+.categoryABox {
+  width: 135px;
+  height: 84px;
+  text-align: center;
+}
+.categoryABox a {
+width: 135.9px;
+height: 84px;
+left: 263.8px;
+right: -263.8px;
+top: 1141px;
+bottom: -1141px;
+color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+}
+.categoryImgBox2 img{
+  width: 95px;
+  height: 100px;
+}
+.productButtom {
+  width: 1320px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productBoxes {
+  width: 1320px;
+  height: 452px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nextButton{
+  width: 15px;
+}
+.nextButton img{
+  position: absolute;
+  top: 50%;
+}
+.productBox{
+  width: 306px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.productImgBox{
+  width: 100%;
+height: 280px;
+}
+.productImgBox .hoverBox{
+  width: 100%;
+height: 100%;
+display: none;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.hoverBox button{
+  width: 260px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background: navy;
+  border-radius: 6px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-weight: 22px;
+  color: #ffffff;
+
+  
+}
+.productImgBox:hover .hoverBox{
+  display: flex;
+
+}
+.productBox .productInfo {
+  width: 100%;
+  height: auto;
+  padding: 5px 22px;
+
+}
+
+.productInfo .productTitle{
+  color: rgb(98, 105, 116);
+  font-family: Jost;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.productInfo .prductDesc{
+  color: rgb(6, 11, 19);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.productInfo .reviewBox{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.reviewBox img{
+ margin-right: 5px;
+
+}
+.reviewBox span{
+  margin-right: 5px;
+  color: rgb(98, 105, 116);
+font-family: Jost;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+}
+.productInfo .priceBox{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.priceBox strong{
+  /* $32.50 (List-Style-3) */
+position: static;
+width: 60px;
+height: 26px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap: 10;
+padding: 0px;
+
+color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
+.priceBox span{
+/* $45 (List-Style-3) */
+position: static;
+width: 25px;
+height: 22px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 0px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 10px;
+  color: rgb(98, 105, 116);
+font-family: Jost;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+text-decoration-line: line-through;
+}
