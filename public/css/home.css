@@ -488,7 +488,7 @@ background: aqua; */
 }
 
 
-.categoryTop, .sellingTop {
+.categoryTop, .sellingTop, .headphoneTop {
   width: 1320px;
   height: 40px;
    display: flex;
@@ -616,12 +616,14 @@ text-align: center;
 .nextButton img{
   position: absolute;
   top: 50%;
+  cursor: pointer;
 }
 .productBox{
   width: 306px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .productImgBox{
   width: 100%;
@@ -765,4 +767,328 @@ line-height: 22px;
 letter-spacing: 0%;
 text-align: left;
 text-decoration-line: line-through;
+}
+.paginationFrame {
+ margin-top:10px;
+  width: 1320px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.paginationFrame .paginationBox{
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.paginationBox img{
+  cursor: pointer;
+}
+.paginationBox .dot{
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: rgb(17, 33, 55);
+  border-radius: 50%;
+}
+.paginationBox .dot .dotActive{
+  width: 20px;
+  height: 20px;
+  
+  outline: 2px solid rgb(4, 30, 66);
+  border-radius: 50%;
+
+}
+.adsFrame {
+  margin-top:30px;
+  width: 1320px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 192, 228);
+}
+.adsFrame span{
+  color: rgb(0, 83, 246);
+font-family: Jost;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+}
+.headphoneFrame{
+  width: 1320px;
+  height: 488px;
+}
+.headphoneTop span{
+  color: var(--Color-Text-Dark, #041E42);
+
+/* 28 / Medium */
+font-family: Jost;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.headphoneTop a {
+  color: var(--Color-Text-Dark, #041E42);
+text-align: center;
+
+font-family: Jost;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; 
+}
+.headphoneTop a:hover{
+  border-bottom: 2px solid rgb(4, 30, 66);
+}
+.headphoneFrame .headphoneBottom{
+
+  width: 1320px;
+  height: 468px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headphoneBottom .headphoneBigBox {
+padding:30px;
+  width: 664px;
+  height: 468px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+box-sizing: border-box;
+background: rgb(229, 229, 229);
+
+}
+.headphoneBigBox .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.headphoneBigBox .content span{
+  color: var(--Color-Text-Dark, #041E42);
+font-family: Jost;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+}
+.headphoneBigBox .content strong{
+width: 161.812px;  
+color: var(--Color-Text-Dark, #041E42);
+font-family: Jost;
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.headphoneBigBox .content a{
+display: inline-flex;
+height: 27px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 3px;
+flex-shrink: 0;
+box-shadow: 0px 5px 20px 0px rgba(245, 195, 75, 0.15);
+}
+.headphoneBigBox .content a:hover: {
+border-bottom: 2px solid rgb(4, 30, 66);
+}
+.headphoneBottom .headphoneBigBox img{
+  position: absolute;
+  width: 322px;
+  height: 309px;
+  top: 50px;
+  right: 34px;
+}
+.headphoneBottom .headphoneBoxWrapper {
+  width: 45%;
+  height: 468px;
+
+  margin-top:10px;
+  box-sizing:border-box;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+  flex-wrap: wrap;
+  
+}
+.headphoneBoxWrapper .headphoneBox {
+  width: 280px;
+  height: 220px;
+  padding: 20px;
+position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(229, 229, 229);
+}
+.headphoneBoxWrapper .headphoneBox .content{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.headphoneBoxWrapper .headphoneBox strong{
+  color: var(--Color-Text-Dark, #041E42);
+
+/* 16/Medium */
+font-family: Jost;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 175% */
+}
+.headphoneBoxWrapper .headphoneBox span{
+color: var(--Color-Text-Light, #626974);
+
+/* 13 / Regular */
+font-family: Jost;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 169.231% */
+}
+.headphoneBoxWrapper .headphoneBox .bluetooth{
+  width: 180px;
+  height: 67px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+.tvFrame {
+  width: 1320px;
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tvFrame .tvTop{
+  width: 1320px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tvTop strong{
+  color: var(--Color-Text-Dark, #041E42);
+
+/* 28 / Medium */
+font-family: Jost;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.tvTop .tvTopRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Color-Text-Dark, #041E42);
+text-align: right;
+
+/* 16/Medium */
+font-family: Jost;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 175% */
+}
+.tvTopRight a{
+margin-left:17px;
+
+  color: var(--Color-Text-Dark, #041E42);
+}
+.tvTopRight a:hover{
+  border-bottom: 2px solid rgb(4, 30, 66);
+}
+.tvFrame .tvButtom{
+  width: 1320px;
+  height: 460px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.tvButtom .tvBox{
+  width: 260px;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.tvBox .tvBoxContent{
+  width: 260px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; 
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.tvBoxContent span{
+ 
+  color: var(--Color-Text-Light, #626974);
+font-family: Jost;
+font-size: 13px;
+
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 169.231% */
+text-transform: uppercase;
+
+}
+.tvBoxContent strong{
+overflow: hidden;
+color: var(--Color-Text-Dark, #041E42);
+text-overflow: ellipsis;
+white-space: nowrap;
+
+/* 16/Medium */
+font-family: Jost;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 175% */
+}
+.tvBoxContent .reviewBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tvBoxContent .reviewBox p{
+  color: var(--Color-Text-Light, #626974);
+
+  /* 14 / Regular */
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+
+.tvBoxContent .priceBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
