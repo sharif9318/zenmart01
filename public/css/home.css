@@ -1,11 +1,12 @@
 body{
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .navbar_frame {
   position: relative;
-  width: 100%;
+  width: 1930px;
   height: 145px;
 
   display: flex;
@@ -269,10 +270,8 @@ svg {
   text-align: right;
 }
 .footer_background {
-width: 100%;
+width: 1930px;
 height: 507px;
-top: 3994px;
-bottom: -3994px;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -806,7 +805,7 @@ text-decoration-line: line-through;
 }
 .adsFrame {
   margin-top:30px;
-  width: 1320px;
+  width: 1930px;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -1090,4 +1089,170 @@ line-height: 20px; /* 175% */
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.eventFrame{
+  width: 1930px;
+  height: 631px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/icons/event_bg.png');
+  background-size: cover; 
+  background-position: center;
+  border-radius: 10px;
+}
+.eventFrame .eventContainer {
+  width: 1300px;
+  height: 392px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.eventContainer .timeBox{
+  width: 334px;
+  height: 214px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.eventContainer .timeBox span{
+ 
+color: white;
+ font-size: 28px;
+ font-family: Jost;
+ font-weight: 500;
+ word-wrap: break-word;
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+.timeBox .countdown{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+ .timeBox .countdown .countdownBox p{
+
+color: white;
+ font-size: 16px;
+ font-family: Jost;
+ font-weight: 500;
+ line-height: 28px;
+ word-wrap: break-word
+ }
+.timeBox button{
+width: 141px;
+height: 52px;
+color: #041E42;
+ font-size: 15px;
+ font-family: Jost;
+ font-weight: 500;
+ line-height: 22px;
+ word-wrap: break-word;
+ /* Bg / White */
+border: 1px solid rgb(255, 255, 255);
+border-radius: 6px;
+background: rgb(245, 195, 75);
+cursor: pointer;
+
+}
+.eventFrame .eventBox{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+.eventFrame .eventBox img{
+  filter:invert(rgb(245, 238, 238));
+  cursor:pointer
+}
+  .eventFrame .eventBox .box{
+    padding: 0 10px;  
+    width: 205px;
+    height: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: white; 
+}
+ .eventFrame .eventBox .box img{
+  width: 168px;
+height: 190px;
+}
+.eventBox .box .content{
+  display: flex;
+  flex-direction: column;
+}
+.eventFrame .eventBox .box span{
+  color: var(--Color-Text-Light, #626974);
+font-family: Jost;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 169.231% */
+text-transform: uppercase;
+}
+.eventBox .content strong{
+color: rgb(4, 30, 66);
+font-family: Jost;
+font-size: 15px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+text-wrap: wrap;
+}
+.eventBox .content .review img{
+  width: 8.848px;
+height: 10px;
+flex-shrink: 0;
+}
+.eventBox .content .review span{
+  color: var(--Color-Text-Light, #626974);
+
+font-family: Jost;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+}
+.eventBox .content .price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.eventBox .content .price strong{
+  color: var(--Color-Text-Dark, #041E42);
+
+/* 16/Medium */
+font-family: Jost;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+}
+.eventBox .content .price span{
+padding-left: 10px;
+color: var(--Color-Text-Light, #626974);
+font-family: Jost;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+text-decoration-line: line-through;
 }
