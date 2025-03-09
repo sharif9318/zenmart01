@@ -1,8 +1,14 @@
-body{
+root {
+  --font: Jost;
+}
+body {
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+a {
+  text-decoration-line: none;
 }
 .navbar_frame {
   position: relative;
@@ -70,7 +76,7 @@ body{
   border: none;
   outline: none;
   color: rgb(4, 30, 66);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -87,7 +93,7 @@ body{
   outline: none;
 
   color: rgb(98, 105, 116);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -151,7 +157,7 @@ svg {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -172,7 +178,7 @@ svg {
 
   background: rgb(245, 195, 75);
   color: rgb(11, 30, 64);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 8px;
   font-weight: 700;
   line-height: 10px;
@@ -196,18 +202,18 @@ svg {
 
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */ */
   align-items: center;
 }
 
 .nav_bottom_menu a {
   color: rgb(255, 255, 255);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
   text-align: left;
+  text-decoration-line: none;
 }
 
 .nav_bottom_menu1 {
@@ -228,7 +234,7 @@ svg {
   display: flex;
   flex-direction: row;
   color: rgb(255, 255, 255);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -236,7 +242,7 @@ svg {
   text-align: left;
 }
 .nav_bottom_menu2 {
- margin-top: 10px;
+  margin-top: 10px;
   margin-left: 3%;
   width: 1fr;
   display: flex;
@@ -250,7 +256,7 @@ svg {
   align-items: center;
 }
 
- .nav_bottom_menu3 {
+.nav_bottom_menu3 {
   margin-top: 10px;
   margin-left: 250px;
   width: 2fr;
@@ -262,7 +268,7 @@ svg {
 .nav_bottom_menu3 span {
   margin-left: 20px;
   color: rgb(255, 255, 255);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -270,15 +276,15 @@ svg {
   text-align: right;
 }
 .footer_background {
-width: 1930px;
-height: 507px;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  width: 1930px;
+  height: 507px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-background: rgb(243, 245, 246);
+  background: rgb(243, 245, 246);
 }
 
 .footer_top {
@@ -292,44 +298,45 @@ background: rgb(243, 245, 246);
 .footer_top1 {
   width: 320px;
   height: 200px;
- 
-display : flex;
-flex-direction: column;
-justify-content: space-around;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
-
-
-.footer_top2, .footer_top3 {
+.footer_top2,
+.footer_top3 {
   padding-left: 50px;
   width: 300px;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
-  }
-
-.footer_top2 a, .footer_top3 a {
-  color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 14px;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0%;
-text-align: left;
 }
-.footer_top3{
+
+.footer_top2 a,
+.footer_top3 a {
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: none;
+}
+.footer_top3 {
   width: 300px;
   height: 200px;
-  /* background: rgb(0, 255, 0); */ 
+  /* background: rgb(0, 255, 0); */
 }
-.footer_top4{
+.footer_top4 {
   width: 300px;
   height: 200px;
   /* background: rgb(79, 148, 228); */
 }
-.footer_top5{
+.footer_top5 {
   width: 300px;
   height: 200px;
   display: flex;
@@ -341,52 +348,52 @@ text-align: left;
 .footer_top h3 {
   margin-top: 0;
   color: rgb(4, 30, 66);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
   text-align: left;
-
 }
-.footer_top strong, b {
-margin-left: 30px;
-color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: left;
-}
-.footer_top1 p {
-  margin-left: 70px;
+.footer_top strong,
+b {
+  margin-left: 30px;
   color: rgb(4, 30, 66);
-  font-family: Jost;
-  font-size: 15px;
+  font-family: var (--font);
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
 }
-.footer_bottom{
+.footer_top1 p {
+  margin-left: 70px;
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: none;
+}
+.footer_bottom {
   margin-top: 90px;
   width: 1320px;
   border-top: 0.8px solid #d0d0da;
   padding-top: 20px;
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: left;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.footer_bottom select{
+.footer_bottom select {
   width: 200px;
   height: 40px;
   background: rgb(255, 255, 255);
@@ -419,29 +426,29 @@ text-align: left;
   background: rgb(0, 83, 246);
 }
 .adsTopLeft .tvComp {
-position: absolute;
-margin: 68px 18px 33px 334px;
-z-index: 2;
+  position: absolute;
+  margin: 68px 18px 33px 334px;
+  z-index: 2;
 }
 .adsTopLeft .immersive {
-width: 350px;
-height: 120px;
-position: absolute;
-margin: 141px 430px 215px 15px;
+  width: 350px;
+  height: 120px;
+  position: absolute;
+  margin: 141px 430px 215px 15px;
 }
 .adsTopLeftP {
   /* Discover our new items. Up to 25% Off ! */
-position: absolute;
-width: 262.11px;
-height: 56px;
-margin: 280px 60px 125px 10px;
-color: white
+  position: absolute;
+  width: 262.11px;
+  height: 56px;
+  margin: 280px 60px 125px 10px;
+  color: white;
 }
 .shopNow {
   width: 140px;
   height: 52px;
   position: absolute;
-  margin: 350px 300px 80px 10px;;
+  margin: 350px 300px 80px 10px;
 }
 .adsTopRight {
   width: 422px;
@@ -449,9 +456,9 @@ color: white
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
-.adsTopRight1, .adsTopRight2 {
+.adsTopRight1,
+.adsTopRight2 {
   width: 422px;
   height: 245px;
   display: flex;
@@ -473,9 +480,8 @@ flex-direction: row;
 justify-content: center;
 background: aqua; */
 
-
-.categoryContainer, .topSellingFrame{
-  
+.categoryContainer,
+.topSellingFrame {
   width: 1320px;
   height: auto;
   margin-top: 50px;
@@ -483,44 +489,45 @@ background: aqua; */
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-
 }
 
-
-.categoryTop, .sellingTop, .headphoneTop {
+.categoryTop,
+.sellingTop,
+.headphoneTop {
   width: 1320px;
   height: 40px;
-   display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.categoryTop, .sellingTop span {
+.categoryTop,
+.sellingTop span {
   width: 1320px;
-height: 40px;
-left: 260px;
-right: 760.19px;
-top: 906px;
-bottom: -906px;
+  height: 40px;
+  left: 260px;
+  right: 760.19px;
+  top: 906px;
+  bottom: -906px;
   color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 28px;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0%;
-
-}  
+  font-family: var (--font);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+}
 .categoryTop a {
   color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 15px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: center;
+  font-family: var (--font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration-line: none;
 }
-.categoryTop a:hover{
+.categoryTop a:hover {
   border-bottom: 2px solid rgb(4, 30, 66);
 }
 .categoryBottom {
@@ -530,18 +537,14 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
- 
-
 }
 .categoryBottom1 {
   width: 142px;
   height: 250px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
- 
 }
 .categoryImgBox1 {
   width: 142px;
@@ -575,21 +578,22 @@ text-align: center;
   text-align: center;
 }
 .categoryABox a {
-width: 135.9px;
-height: 84px;
-left: 263.8px;
-right: -263.8px;
-top: 1141px;
-bottom: -1141px;
-color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 16px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0%;
-text-align: center;
+  width: 135.9px;
+  height: 84px;
+  left: 263.8px;
+  right: -263.8px;
+  top: 1141px;
+  bottom: -1141px;
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration-line: none;
 }
-.categoryImgBox2 img{
+.categoryImgBox2 img {
   width: 95px;
   height: 100px;
 }
@@ -609,34 +613,34 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.nextButton{
+.nextButton {
   width: 15px;
 }
-.nextButton img{
+.nextButton img {
   position: absolute;
   top: 50%;
   cursor: pointer;
 }
-.productBox{
+.productBox {
   width: 306px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.productImgBox{
+.productImgBox {
   width: 100%;
-height: 280px;
+  height: 280px;
 }
-.productImgBox .hoverBox{
+.productImgBox .hoverBox {
   width: 100%;
-height: 100%;
-display: none;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-.hoverBox button{
+.hoverBox button {
   width: 260px;
   height: 50px;
   display: flex;
@@ -646,28 +650,24 @@ align-items: center;
   border: none;
   background: navy;
   border-radius: 6px;
-  font-family: Jost;
+  font-family: var (--font);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   color: #ffffff;
-
-  
 }
-.productImgBox:hover .hoverBox{
+.productImgBox:hover .hoverBox {
   display: flex;
-
 }
 .productBox .productInfo {
   width: 100%;
   height: auto;
   padding: 5px 22px;
-
 }
 
-.productInfo .productTitle{
+.productInfo .productTitle {
   color: rgb(98, 105, 116);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
@@ -675,99 +675,97 @@ align-items: center;
   text-align: left;
   text-transform: uppercase;
 }
-.productInfo .prductDesc{
+.productInfo .prductDesc {
   color: rgb(6, 11, 19);
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
   text-align: left;
+  text-decoration-line: none;
 }
-.productInfo .reviewBox{
+.productInfo .reviewBox {
   margin-top: 7px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  
 }
-.reviewBox img{
- margin-right: 5px;
-
+.reviewBox img {
+  margin-right: 5px;
 }
-.reviewBox span{
+.reviewBox span {
   margin-right: 5px;
   color: rgb(98, 105, 116);
-font-family: Jost;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: left;
+  font-family: var (--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.productInfo .priceBox{
+.productInfo .priceBox {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.priceBox strong{
+.priceBox strong {
   /* $32.50 (List-Style-3) */
-position: static;
-width: 60px;
-height: 26px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-gap: 10;
-padding: 0px;
+  position: static;
+  width: 60px;
+  height: 26px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10;
+  padding: 0px;
 
-color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: left;
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
 
-/* Inside Auto Layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 }
-.priceBox span{
-/* $45 (List-Style-3) */
-position: static;
-width: 25px;
-height: 22px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10;
-padding: 0px;
+.priceBox span {
+  /* $45 (List-Style-3) */
+  position: static;
+  width: 25px;
+  height: 22px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 0px;
 
-
-/* Inside Auto Layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 10px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
   color: rgb(98, 105, 116);
-font-family: Jost;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0%;
-text-align: left;
-text-decoration-line: line-through;
+  font-family: var (--font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: line-through;
 }
 .paginationFrame {
- margin-top:10px;
+  margin-top: 10px;
   width: 1320px;
   height: 50px;
   display: flex;
@@ -775,7 +773,7 @@ text-decoration-line: line-through;
   justify-content: center;
   align-items: center;
 }
-.paginationFrame .paginationBox{
+.paginationFrame .paginationBox {
   width: 20%;
   height: auto;
   display: flex;
@@ -783,28 +781,27 @@ text-decoration-line: line-through;
   justify-content: space-between;
   align-items: center;
 }
-.paginationBox img{
+.paginationBox img {
   cursor: pointer;
 }
-.paginationBox .dot{
+.paginationBox .dot {
   width: 5px;
   height: 5px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background: rgb(17, 33, 55);
   border-radius: 50%;
 }
-.paginationBox .dot .dotActive{
+.paginationBox .dot .dotActive {
   width: 20px;
   height: 20px;
-  
+
   outline: 2px solid rgb(4, 30, 66);
   border-radius: 50%;
-
 }
 .adsFrame {
-  margin-top:30px;
+  margin-top: 30px;
   width: 1930px;
   height: 120px;
   display: flex;
@@ -813,44 +810,43 @@ text-decoration-line: line-through;
   align-items: center;
   background-color: rgb(175, 192, 228);
 }
-.adsFrame span{
+.adsFrame span {
   color: rgb(0, 83, 246);
-font-family: Jost;
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
+  font-family: var (--font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
 }
-.headphoneFrame{
+.headphoneFrame {
   width: 1320px;
   height: 488px;
 }
-.headphoneTop span{
-  color: var(--Color-Text-Dark, #041E42);
+.headphoneTop span {
+  color: var(--Color-Text-Dark, #041e42);
 
-/* 28 / Medium */
-font-family: Jost;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  /* 28 / Medium */
+  font-family: var (--font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .headphoneTop a {
-  color: var(--Color-Text-Dark, #041E42);
-text-align: center;
+  color: var(--Color-Text-Dark, #041e42);
+  text-align: center;
 
-font-family: Jost;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-line-height: 22px; 
+  font-family: var (--font);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration-line: none;
 }
-.headphoneTop a:hover{
+.headphoneTop a:hover {
   border-bottom: 2px solid rgb(4, 30, 66);
 }
-.headphoneFrame .headphoneBottom{
-
+.headphoneFrame .headphoneBottom {
   width: 1320px;
   height: 468px;
   display: flex;
@@ -859,52 +855,51 @@ line-height: 22px;
   align-items: center;
 }
 .headphoneBottom .headphoneBigBox {
-padding:30px;
+  padding: 30px;
   width: 664px;
   height: 468px;
   position: relative;
   display: flex;
   flex-direction: row;
-box-sizing: border-box;
-background: rgb(229, 229, 229);
-
+  box-sizing: border-box;
+  background: rgb(229, 229, 229);
 }
-.headphoneBigBox .content{
+.headphoneBigBox .content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.headphoneBigBox .content span{
-  color: var(--Color-Text-Dark, #041E42);
-font-family: Jost;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; 
+.headphoneBigBox .content span {
+  color: var(--Color-Text-Dark, #041e42);
+  font-family: var (--font);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
 }
-.headphoneBigBox .content strong{
-width: 161.812px;  
-color: var(--Color-Text-Dark, #041E42);
-font-family: Jost;
-font-size: 26px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.headphoneBigBox .content strong {
+  width: 161.812px;
+  color: var(--Color-Text-Dark, #041e42);
+  font-family: var (--font);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.headphoneBigBox .content a{
-display: inline-flex;
-height: 27px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 3px;
-flex-shrink: 0;
-box-shadow: 0px 5px 20px 0px rgba(245, 195, 75, 0.15);
+.headphoneBigBox .content a {
+  display: inline-flex;
+  height: 27px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  flex-shrink: 0;
+  box-shadow: 0px 5px 20px 0px rgba(245, 195, 75, 0.15);
 }
-.headphoneBigBox .content a:hover: {
-border-bottom: 2px solid rgb(4, 30, 66);
+.headphonebigbox .content a:hover: {
+  border-bottom: 2px solid rgb(4, 30, 66);
 }
-.headphoneBottom .headphoneBigBox img{
+.headphoneBottom .headphoneBigBox img {
   position: absolute;
   width: 322px;
   height: 309px;
@@ -915,53 +910,51 @@ border-bottom: 2px solid rgb(4, 30, 66);
   width: 45%;
   height: 468px;
 
-  margin-top:10px;
-  box-sizing:border-box;
- 
+  margin-top: 10px;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- 
+
   flex-wrap: wrap;
-  
 }
 .headphoneBoxWrapper .headphoneBox {
   width: 280px;
   height: 220px;
   padding: 20px;
-position: relative;
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: rgb(229, 229, 229);
 }
-.headphoneBoxWrapper .headphoneBox .content{
+.headphoneBoxWrapper .headphoneBox .content {
   display: flex;
   flex-direction: column;
- 
 }
-.headphoneBoxWrapper .headphoneBox strong{
-  color: var(--Color-Text-Dark, #041E42);
+.headphoneBoxWrapper .headphoneBox strong {
+  color: var(--Color-Text-Dark, #041e42);
 
-/* 16/Medium */
-font-family: Jost;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 175% */
+  /* 16/Medium */
+  font-family: var (--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
 }
-.headphoneBoxWrapper .headphoneBox span{
-color: var(--Color-Text-Light, #626974);
+.headphoneBoxWrapper .headphoneBox span {
+  color: var(--Color-Text-Light, #626974);
 
-/* 13 / Regular */
-font-family: Jost;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 169.231% */
+  /* 13 / Regular */
+  font-family: var (--font);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
 }
-.headphoneBoxWrapper .headphoneBox .bluetooth{
+.headphoneBoxWrapper .headphoneBox .bluetooth {
   width: 180px;
   height: 67px;
   position: absolute;
@@ -976,7 +969,7 @@ line-height: 22px; /* 169.231% */
   flex-direction: column;
   justify-content: space-between;
 }
-.tvFrame .tvTop{
+.tvFrame .tvTop {
   width: 1320px;
   height: 40px;
   display: flex;
@@ -984,40 +977,40 @@ line-height: 22px; /* 169.231% */
   justify-content: space-between;
   align-items: center;
 }
-.tvTop strong{
-  color: var(--Color-Text-Dark, #041E42);
+.tvTop strong {
+  color: var(--Color-Text-Dark, #041e42);
 
-/* 28 / Medium */
-font-family: Jost;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  /* 28 / Medium */
+  font-family: var (--font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.tvTop .tvTopRight{
+.tvTop .tvTopRight {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: var(--Color-Text-Dark, #041E42);
-text-align: right;
+  color: var(--Color-Text-Dark, #041e42);
+  text-align: right;
 
-/* 16/Medium */
-font-family: Jost;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 175% */
+  /* 16/Medium */
+  font-family: var (--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
 }
-.tvTopRight a{
-margin-left:17px;
+.tvTopRight a {
+  margin-left: 17px;
 
-  color: var(--Color-Text-Dark, #041E42);
+  color: var(--Color-Text-Dark, #041e42);
 }
-.tvTopRight a:hover{
+.tvTopRight a:hover {
   border-bottom: 2px solid rgb(4, 30, 66);
 }
-.tvFrame .tvButtom{
+.tvFrame .tvButtom {
   width: 1320px;
   height: 460px;
   display: flex;
@@ -1025,7 +1018,7 @@ margin-left:17px;
   justify-content: space-between;
   box-sizing: border-box;
 }
-.tvButtom .tvBox{
+.tvButtom .tvBox {
   width: 260px;
   height: 100%;
   padding: 0 20px;
@@ -1034,225 +1027,216 @@ margin-left:17px;
   justify-content: space-between;
   box-sizing: border-box;
 }
-.tvBox .tvBoxContent{
+.tvBox .tvBoxContent {
   width: 260px;
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content:space-between; 
+  justify-content: space-between;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
-.tvBoxContent span{
- 
+.tvBoxContent span {
   color: var(--Color-Text-Light, #626974);
-font-family: Jost;
-font-size: 13px;
+  font-family: var (--font);
+  font-size: 13px;
 
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 169.231% */
-text-transform: uppercase;
-
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 169.231% */
+  text-transform: uppercase;
 }
-.tvBoxContent strong{
-overflow: hidden;
-color: var(--Color-Text-Dark, #041E42);
-text-overflow: ellipsis;
-white-space: nowrap;
+.tvBoxContent strong {
+  overflow: hidden;
+  color: var(--Color-Text-Dark, #041e42);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
-/* 16/Medium */
-font-family: Jost;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 175% */
+  /* 16/Medium */
+  font-family: var (--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 175% */
 }
-.tvBoxContent .reviewBox{
+.tvBoxContent .reviewBox {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.tvBoxContent .reviewBox p{
+.tvBoxContent .reviewBox p {
   color: var(--Color-Text-Light, #626974);
 
   /* 14 / Regular */
-  font-family: Jost;
+  font-family: var (--font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
 }
 
-
-.tvBoxContent .priceBox{
+.tvBoxContent .priceBox {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.eventFrame{
+.eventFrame {
   width: 1930px;
   height: 631px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/icons/event_bg.png');
-  background-size: cover; 
+  background-image: url("../images/icons/event_bg.png");
+  background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
 .eventFrame .eventContainer {
   width: 1300px;
   height: 392px;
-  
+
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
-.eventContainer .timeBox{
+.eventContainer .timeBox {
   width: 334px;
   height: 214px;
-  padding-right: 20px;
+  padding-right: 50fpx;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.eventContainer .timeBox span{
- 
-color: white;
- font-size: 28px;
- font-family: Jost;
- font-weight: 500;
- word-wrap: break-word;
-  font-family: Jost;
+.eventContainer .timeBox span {
+  color: white;
+  font-size: 28px;
+  font-family: var (--font);
+  font-weight: 500;
+  word-wrap: break-word;
+  font-family: var (--font);
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0%;
   text-align: left;
-
 }
-.timeBox .countdown{
+.timeBox .countdown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
- .timeBox .countdown .countdownBox p{
-
-color: white;
- font-size: 16px;
- font-family: Jost;
- font-weight: 500;
- line-height: 28px;
- word-wrap: break-word
- }
-.timeBox button{
-width: 141px;
-height: 52px;
-color: #041E42;
- font-size: 15px;
- font-family: Jost;
- font-weight: 500;
- line-height: 22px;
- word-wrap: break-word;
- /* Bg / White */
-border: 1px solid rgb(255, 255, 255);
-border-radius: 6px;
-background: rgb(245, 195, 75);
-cursor: pointer;
-
+.timeBox .countdown .countdownBox p {
+  color: white;
+  font-size: 16px;
+  font-family: var (--font);
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
 }
-.eventFrame .eventBox{
+.timeBox button {
+  width: 141px;
+  height: 52px;
+  color: #041e42;
+  font-size: 15px;
+  font-family: var (--font);
+  font-weight: 500;
+  line-height: 22px;
+  word-wrap: break-word;
+  /* Bg / White */
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  background: rgb(245, 195, 75);
+  cursor: pointer;
+}
+.eventFrame .eventBox {
   width: 100%;
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
-
 }
-.eventFrame .eventBox img{
-  filter:invert(rgb(245, 238, 238));
-  cursor:pointer
+.eventFrame .eventBox img {
+  filter: invert(rgb(245, 238, 238));
+  cursor: pointer;
 }
-  .eventFrame .eventBox .box{
-    padding: 0 10px;  
-    width: 205px;
-    height: 392px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 6px;
-    background: white; 
+.eventFrame .eventBox .box {
+  padding: 0 10px;
+  width: 205px;
+  height: 392px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: white;
 }
- .eventFrame .eventBox .box img{
+.eventFrame .eventBox .box img {
   width: 168px;
-height: 190px;
+  height: 190px;
 }
-.eventBox .box .content{
+.eventBox .box .content {
   display: flex;
   flex-direction: column;
 }
-.eventFrame .eventBox .box span{
+.eventFrame .eventBox .box span {
   color: var(--Color-Text-Light, #626974);
-font-family: Jost;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 169.231% */
-text-transform: uppercase;
+  font-family: var (--font);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 169.231% */
+  text-transform: uppercase;
 }
-.eventBox .content strong{
-color: rgb(4, 30, 66);
-font-family: Jost;
-font-size: 15px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0%;
-text-align: left;
-text-wrap: wrap;
+.eventBox .content strong {
+  color: rgb(4, 30, 66);
+  font-family: var (--font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-wrap: wrap;
 }
-.eventBox .content .review img{
+.eventBox .content .review img {
   width: 8.848px;
-height: 10px;
-flex-shrink: 0;
+  height: 10px;
+  flex-shrink: 0;
 }
-.eventBox .content .review span{
+.eventBox .content .review span {
   color: var(--Color-Text-Light, #626974);
 
-font-family: Jost;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
+  font-family: var (--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
 }
-.eventBox .content .price{
+.eventBox .content .price {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.eventBox .content .price strong{
-  color: var(--Color-Text-Dark, #041E42);
+.eventBox .content .price strong {
+  color: var(--Color-Text-Dark, #041e42);
 
-/* 16/Medium */
-font-family: Jost;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px;
+  /* 16/Medium */
+  font-family: var (--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
-.eventBox .content .price span{
-padding-left: 10px;
-color: var(--Color-Text-Light, #626974);
-font-family: Jost;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
-text-decoration-line: line-through;
+.eventBox .content .price span {
+  padding-left: 10px;
+  color: var(--Color-Text-Light, #626974);
+  font-family: var (--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  text-decoration-line: line-through;
 }
