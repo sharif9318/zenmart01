@@ -1,8 +1,8 @@
 :root{
-  --font: Jost;
+--font: 'Jost', sans-serif;  
 }
 body{
-  width: 2506px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
